@@ -447,9 +447,9 @@ function buildHtmlBody(mode){
 
   html += `<table style="border-collapse:collapse;font-family:${FONT};font-size:10pt;margin-bottom:10px;border:1px solid ${BORDER};" cellpadding="0" cellspacing="0">`;
   html += `<tr>
-    <th style="padding:3px 10px;background:${ACCENT};color:#ffffff;text-align:left;border:1px solid ${BORDER};">${s.thItem}</th>`;
+    <th style="padding:1px 8px;background:${ACCENT};color:#ffffff;text-align:left;border:1px solid ${BORDER};">${s.thItem}</th>`;
   types.forEach(type => {
-    html += `<th style="padding:3px 10px;background:${ACCENT};color:#ffffff;text-align:right;border:1px solid ${BORDER};">${type}</th>`;
+    html += `<th style="padding:1px 8px;background:${ACCENT};color:#ffffff;text-align:right;border:1px solid ${BORDER};">${type}</th>`;
   });
   html += `</tr>`;
 
@@ -457,11 +457,11 @@ function buildHtmlBody(mode){
     const rate = rates[item];
     const rowBg = idx % 2 === 1 ? STRIPE : '#ffffff';
     html += `<tr style="background:${rowBg};">
-      <td style="padding:2px 10px;border:1px solid ${BORDER};">${item}</td>`;
+      <td style="padding:0px 8px;border:1px solid ${BORDER};">${item}</td>`;
     types.forEach(type => {
       const unit = rate[type];
       const symbol = rate.currency === 'USD' ? '$' : '₩';
-      html += `<td style="padding:2px 10px;border:1px solid ${BORDER};text-align:right;">${symbol}${fmt(unit)}</td>`;
+      html += `<td style="padding:0px 8px;border:1px solid ${BORDER};text-align:right;">${symbol}${fmt(unit)}</td>`;
     });
     html += `</tr>`;
   });
