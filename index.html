@@ -436,21 +436,20 @@ function buildHtmlBody(mode){
 
   const ACCENT = '#33427a';
   const BRAND_RED = '#c14432';
-  const LINE = '#e2e4ea';
+  const BORDER = '#000000';
   const STRIPE = '#f7f7f9';
-  const USD_TXT = '#8a5a1e', USD_BG = '#fbf1e2';
-  const WON_TXT = '#1e6b4f', WON_BG = '#e9f5f0';
+  const FONT = "'맑은 고딕','Malgun Gothic',Arial,sans-serif";
 
   let html = '';
-  html += `<div style="font-family:Arial,'Malgun Gothic',sans-serif;font-size:14px;color:#1f2430;">`;
+  html += `<div style="font-family:${FONT};font-size:10pt;color:#1f2430;">`;
   html += `<p style="margin:0 0 10px;">${s.greeting}</p>`;
   html += `<p style="margin:0 0 14px;">${s.introLine(label, route)}</p>`;
 
-  html += `<table style="border-collapse:collapse;font-size:13px;margin-bottom:10px;border:1px solid ${LINE};border-top:3px solid ${BRAND_RED};" cellpadding="0" cellspacing="0">`;
+  html += `<table style="border-collapse:collapse;font-family:${FONT};font-size:10pt;margin-bottom:10px;border:1px solid ${BORDER};" cellpadding="0" cellspacing="0">`;
   html += `<tr>
-    <th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:left;font-size:11px;letter-spacing:.03em;text-transform:uppercase;">${s.thItem}</th>`;
+    <th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:left;border:1px solid ${BORDER};">${s.thItem}</th>`;
   types.forEach(type => {
-    html += `<th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:right;font-size:11px;letter-spacing:.03em;text-transform:uppercase;">${type}</th>`;
+    html += `<th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:right;border:1px solid ${BORDER};">${type}</th>`;
   });
   html += `</tr>`;
 
@@ -458,17 +457,17 @@ function buildHtmlBody(mode){
     const rate = rates[item];
     const rowBg = idx % 2 === 1 ? STRIPE : '#ffffff';
     html += `<tr style="background:${rowBg};">
-      <td style="padding:6px 12px;border-bottom:1px solid ${LINE};">${item}</td>`;
+      <td style="padding:6px 12px;border:1px solid ${BORDER};">${item}</td>`;
     types.forEach(type => {
       const unit = rate[type];
       const symbol = rate.currency === 'USD' ? '$' : '₩';
-      html += `<td style="padding:6px 12px;border-bottom:1px solid ${LINE};text-align:right;">${symbol}${fmt(unit)}</td>`;
+      html += `<td style="padding:6px 12px;border:1px solid ${BORDER};text-align:right;">${symbol}${fmt(unit)}</td>`;
     });
     html += `</tr>`;
   });
   html += `</table>`;
 
-  html += `<p style="margin:0 0 4px;color:#5b6270;font-size:12.5px;">${s.frtNote}</p>`;
+  html += `<p style="margin:0 0 4px;color:#5b6270;">${s.frtNote}</p>`;
   html += `<p style="margin:14px 0 0;">${s.thanks}<br>${s.signature}</p>`;
   html += `</div>`;
   return html;
