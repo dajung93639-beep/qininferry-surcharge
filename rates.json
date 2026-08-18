@@ -1,0 +1,24 @@
+{
+  "export": {
+    "BAF": { "currency": "USD", "20DRY": 100, "40HQ": 200, "20RF": 100, "40RF": 200 },
+    "THC": { "currency": "WON", "20DRY": 150000, "40HQ": 210000, "20RF": 250000, "40RF": 375000 },
+    "DOC": { "currency": "WON", "20DRY": 40000, "40HQ": 40000, "20RF": 40000, "40RF": 40000 },
+    "WFG": { "currency": "WON", "20DRY": 4200, "40HQ": 8400, "20RF": 4200, "40RF": 8400 },
+    "PSF": { "currency": "WON", "20DRY": 259, "40HQ": 518, "20RF": 259, "40RF": 518 },
+    "PFS": { "currency": "WON", "20DRY": 145, "40HQ": 290, "20RF": 145, "40RF": 290 },
+    "SLC": { "currency": "WON", "20DRY": 8000, "40HQ": 8000, "20RF": 8000, "40RF": 8000 }
+  },
+  "import": {
+    "BAF": { "currency": "USD", "20DRY": 190, "40HQ": 380, "20RF": 190, "40RF": 380 },
+    "CAF": { "currency": "USD", "20DRY": 30, "40HQ": 60, "20RF": 30, "40RF": 60 },
+    "THC": { "currency": "WON", "20DRY": 150000, "40HQ": 210000, "20RF": 250000, "40RF": 375000 },
+    "DOC": { "currency": "WON", "20DRY": 40000, "40HQ": 40000, "20RF": 40000, "40RF": 40000 },
+    "WFG": { "currency": "WON", "20DRY": 4200, "40HQ": 8400, "20RF": 4200, "40RF": 8400 },
+    "CCF": { "currency": "WON", "20DRY": 35000, "40HQ": 50000, "20RF": 45000, "40RF": 60000 },
+    "CRS": { "currency": "USD", "20DRY": 40, "40HQ": 80, "20RF": 40, "40RF": 80 },
+    "PSF": { "currency": "WON", "20DRY": 259, "40HQ": 518, "20RF": 259, "40RF": 518 },
+    "PFS": { "currency": "WON", "20DRY": 145, "40HQ": 290, "20RF": 145, "40RF": 290 }
+  },
+  "lastEditor": "최다정",
+  "lastEditDate": "2026-08-07"
+}
