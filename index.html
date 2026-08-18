@@ -398,7 +398,7 @@ function calculate(mode){
   emptyHint.style.display = 'none';
 
   // 헤더
-  let headHtml = `<tr><th>${s.thItem}</th><th>${s.thUnit}</th>`;
+  let headHtml = `<tr><th>${s.thItem}</th>`;
   types.forEach(t => headHtml += `<th class="num">${t}</th>`);
   headHtml += '</tr>';
   thead.innerHTML = headHtml;
@@ -410,7 +410,7 @@ function calculate(mode){
 
   Object.keys(rates).forEach(item => {
     const rate = rates[item];
-    let rowHtml = `<td>${item}</td><td><span class="badge ${rate.currency === 'USD' ? 'usd' : 'won'}">${rate.currency}</span></td>`;
+    let rowHtml = `<td>${item}</td>`;
     types.forEach(t => {
       const unit = rate[t];
       totals[t][rate.currency] += unit;
@@ -448,8 +448,7 @@ function buildHtmlBody(mode){
 
   html += `<table style="border-collapse:collapse;font-size:13px;margin-bottom:10px;border:1px solid ${LINE};border-top:3px solid ${BRAND_RED};" cellpadding="0" cellspacing="0">`;
   html += `<tr>
-    <th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:left;font-size:11px;letter-spacing:.03em;text-transform:uppercase;">${s.thItem}</th>
-    <th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:left;font-size:11px;letter-spacing:.03em;text-transform:uppercase;">${s.thUnit}</th>`;
+    <th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:left;font-size:11px;letter-spacing:.03em;text-transform:uppercase;">${s.thItem}</th>`;
   types.forEach(type => {
     html += `<th style="padding:7px 12px;background:${ACCENT};color:#ffffff;text-align:right;font-size:11px;letter-spacing:.03em;text-transform:uppercase;">${type}</th>`;
   });
@@ -458,13 +457,8 @@ function buildHtmlBody(mode){
   Object.keys(rates).forEach((item, idx) => {
     const rate = rates[item];
     const rowBg = idx % 2 === 1 ? STRIPE : '#ffffff';
-    const badgeColor = rate.currency === 'USD' ? USD_TXT : WON_TXT;
-    const badgeBg = rate.currency === 'USD' ? USD_BG : WON_BG;
     html += `<tr style="background:${rowBg};">
-      <td style="padding:6px 12px;border-bottom:1px solid ${LINE};">${item}</td>
-      <td style="padding:6px 12px;border-bottom:1px solid ${LINE};">
-        <span style="display:inline-block;padding:2px 7px;border-radius:20px;font-size:10px;font-weight:bold;color:${badgeColor};background:${badgeBg};">${rate.currency}</span>
-      </td>`;
+      <td style="padding:6px 12px;border-bottom:1px solid ${LINE};">${item}</td>`;
     types.forEach(type => {
       const unit = rate[type];
       const symbol = rate.currency === 'USD' ? '$' : '₩';
