@@ -8,11 +8,10 @@
   :root{
     --ink:#1f2430; --sub:#5b6270; --line:#e2e4ea; --bg:#f7f7f9; --card:#ffffff;
     --accent:#33427a; --accent-bg:#eaedf6; --brand-red:#c14432;
-    --usd:#8a5a1e; --usd-bg:#fbf1e2; --won:#1e6b4f; --won-bg:#e9f5f0;
   }
   *{box-sizing:border-box;}
   body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:32px 16px;}
-  .wrap{max-width:720px;margin:0 auto;}
+  .wrap{max-width:760px;margin:0 auto;}
   .brand-bar{height:4px;border-radius:4px;background:var(--brand-red);margin-bottom:20px;}
   h1{font-size:19px;font-weight:700;margin:0 0 4px;}
   .sub{color:var(--sub);font-size:13.5px;margin:0 0 20px;line-height:1.5;}
@@ -24,10 +23,12 @@
   input[type=text], input[type=password]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px;}
   .row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
   .field{flex:1;min-width:160px;}
-  .type-grid{display:grid;grid-template-columns:70px 1fr 1fr;gap:8px;align-items:center;margin-bottom:8px;}
-  .type-grid .type-label{font-size:13px;font-weight:600;}
-  .type-grid select, .type-grid input[type=number]{padding:8px 10px;border:1px solid var(--line);border-radius:6px;font-size:13px;}
-  .type-grid input[type=number]{text-align:right;}
+  .type-table{width:100%;border-collapse:collapse;margin-bottom:8px;}
+  .type-table th{font-size:11px;color:var(--sub);text-transform:uppercase;text-align:left;padding:4px 6px;font-weight:600;}
+  .type-table td{padding:4px 6px;}
+  .type-table .type-label{font-size:13px;font-weight:600;width:110px;}
+  .type-table input[type=number]{width:100%;padding:7px 8px;border:1px solid var(--line);border-radius:6px;font-size:13px;text-align:right;}
+  .usd-tag{font-size:11px;color:var(--sub);}
   .btn-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
   button{padding:10px 18px;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;}
   .btn-primary{background:var(--accent);color:#fff;}
@@ -38,6 +39,7 @@
   .results .avg-title{font-weight:700;color:var(--accent);margin-bottom:8px;}
   .results .entry{padding:5px 0;border-bottom:1px solid var(--line);color:var(--sub);}
   .results .entry:last-child{border-bottom:none;}
+  .results .entry .date-tag{color:var(--ink);font-weight:600;}
   details{margin-top:16px;font-size:12.5px;color:var(--sub);}
   details input[type=password]{margin-top:8px;}
   .check-row{display:flex;align-items:center;gap:6px;font-size:12.5px;margin-top:8px;}
@@ -48,7 +50,7 @@
 <div class="wrap">
   <div class="brand-bar"></div>
   <h1>FRT 견적 관리</h1>
-  <p class="sub">FRT는 품목·실화주에 따라 달라져 표준 요율표로 관리하지 않습니다. 과거 견적을 조회하거나, 새 견적을 기록해두세요.</p>
+  <p class="sub">FRT/LSS는 품목·실화주에 따라 달라져 표준 요율표로 관리하지 않습니다. 과거 견적을 조회하거나, 새 견적을 기록해두세요. (통화는 USD로 통일)</p>
 
   <div class="tabs">
     <button class="tab-btn active" id="tabBtnExport" onclick="switchTab('export')">수출</button>
@@ -57,12 +59,15 @@
 
   <div class="card">
     <div class="row">
-      <div class="field"><label>품목</label><input type="text" id="frtItem" placeholder="예: 전자제품"></div>
+      <div class="field"><label>품목 (선택)</label><input type="text" id="frtItem" placeholder="예: 전자제품"></div>
       <div class="field"><label>실화주</label><input type="text" id="frtCustomer" placeholder="예: OO물산"></div>
     </div>
 
-    <label>컨테이너 타입별 FRT</label>
-    <div id="frtTypesArea"></div>
+    <label>컨테이너 타입별 FRT / LSS <span class="usd-tag">(단위: USD)</span></label>
+    <table class="type-table">
+      <tr><th>타입</th><th>FRT</th><th>LSS</th></tr>
+      <tbody id="frtTypesArea"></tbody>
+    </table>
 
     <div class="btn-row">
       <button class="btn-secondary" onclick="lookupFrtHistory()">과거 견적 조회</button>
@@ -78,17 +83,18 @@
     </details>
   </div>
 
-  <p class="footer-note">진인해운 인천-진황도 항로 · FRT 견적 기록은 frt_history.json에 누적됩니다.</p>
+  <p class="footer-note">진인해운 인천-진황도 항로 · FRT/LSS 견적 기록은 frt_history.json에 날짜순으로 누적됩니다.</p>
 </div>
 
 <script>
 const OWNER = 'dajung93639-beep';
 const REPO = 'qininferry-surcharge';
 const FRT_HISTORY_URL = 'frt_history.json';
-const CONTAINER_TYPES = ['20DRY', '40HQ', '20RF', '40RF'];
+const CONTAINER_TYPES = ['20DRY', '40HQ', '20RF', '40RF', 'ALL'];
+const TYPE_LABELS = { '20DRY': '20DRY', '40HQ': '40HQ', '20RF': '20RF (냉동)', '40RF': '40RF (냉동)', 'ALL': '전체 (타입무관)' };
 
 let currentMode = 'export';
-const frtValues = { export: {}, import: {} };
+const frtValues = { export: {}, import: {} }; // frtValues[mode][type] = { frt, lss }
 
 function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
 
@@ -107,33 +113,37 @@ function renderFrtTypeInputs(){
   const area = document.getElementById('frtTypesArea');
   area.innerHTML = '';
   CONTAINER_TYPES.forEach(type => {
-    const existing = frtValues[currentMode][type] || { currency: 'USD', amount: '' };
-    const wrap = document.createElement('div');
-    wrap.className = 'type-grid';
-    wrap.innerHTML = `
-      <span class="type-label">${type}</span>
-      <select id="frt_${type}_cur" onchange="updateFrtValue('${type}')">
-        <option value="USD" ${existing.currency === 'USD' ? 'selected' : ''}>USD</option>
-        <option value="WON" ${existing.currency === 'WON' ? 'selected' : ''}>WON</option>
-      </select>
-      <input type="number" step="any" id="frt_${type}_amt" placeholder="금액" value="${existing.amount}" oninput="updateFrtValue('${type}')">
+    const existing = frtValues[currentMode][type] || { frt: '', lss: '' };
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="type-label">${TYPE_LABELS[type]}</td>
+      <td><input type="number" step="any" id="frt_${type}_frt" placeholder="FRT" value="${existing.frt}" oninput="updateFrtValue('${type}')"></td>
+      <td><input type="number" step="any" id="frt_${type}_lss" placeholder="LSS" value="${existing.lss}" oninput="updateFrtValue('${type}')"></td>
     `;
-    area.appendChild(wrap);
+    area.appendChild(tr);
   });
 }
 
 function updateFrtValue(type){
-  const cur = document.getElementById('frt_' + type + '_cur').value;
-  const amt = document.getElementById('frt_' + type + '_amt').value;
-  frtValues[currentMode][type] = { currency: cur, amount: amt };
+  const frt = document.getElementById('frt_' + type + '_frt').value;
+  const lss = document.getElementById('frt_' + type + '_lss').value;
+  frtValues[currentMode][type] = { frt, lss };
 }
 
 function getFrtEntries(){
   const result = {};
   CONTAINER_TYPES.forEach(type => {
     const v = frtValues[currentMode][type];
-    if(v && v.amount !== '' && !isNaN(parseFloat(v.amount))){
-      result[type] = { currency: v.currency, amount: parseFloat(v.amount) };
+    if(!v) return;
+    const frtNum = parseFloat(v.frt);
+    const lssNum = parseFloat(v.lss);
+    const hasFrt = v.frt !== '' && !isNaN(frtNum);
+    const hasLss = v.lss !== '' && !isNaN(lssNum);
+    if(hasFrt || hasLss){
+      result[type] = {
+        frt: hasFrt ? { currency: 'USD', amount: frtNum } : null,
+        lss: hasLss ? { currency: 'USD', amount: lssNum } : null
+      };
     }
   });
   return result;
@@ -164,7 +174,13 @@ async function lookupFrtHistory(){
       const itemMatch = item && r.item && r.item.toLowerCase().includes(item.toLowerCase());
       const customerMatch = customer && r.customer && r.customer.toLowerCase().includes(customer.toLowerCase());
       return itemMatch || customerMatch;
-    }).sort((a, b) => new Date(b.date) - new Date(a.date));
+    }).sort((a, b) => {
+      // 날짜 없는 건 뒤로, 있는 건 최신순
+      if(!a.date && !b.date) return 0;
+      if(!a.date) return 1;
+      if(!b.date) return -1;
+      return new Date(b.date) - new Date(a.date);
+    });
 
     if(matches.length === 0){
       statusEl.textContent = '일치하는 과거 견적이 없습니다.';
@@ -173,35 +189,41 @@ async function lookupFrtHistory(){
 
     statusEl.textContent = `${matches.length}건의 과거 견적을 찾았습니다.`;
 
-    const sums = {};
+    // 타입별 FRT/LSS 평균 계산
+    const sums = {}; // sums[type] = { frtTotal, frtCount, lssTotal, lssCount }
     matches.forEach(r => {
       Object.keys(r.types || {}).forEach(type => {
         const entry = r.types[type];
-        if(!sums[type]) sums[type] = {};
-        if(!sums[type][entry.currency]) sums[type][entry.currency] = { total: 0, count: 0 };
-        sums[type][entry.currency].total += entry.amount;
-        sums[type][entry.currency].count += 1;
+        if(!sums[type]) sums[type] = { frtTotal: 0, frtCount: 0, lssTotal: 0, lssCount: 0 };
+        if(entry.frt){ sums[type].frtTotal += entry.frt.amount; sums[type].frtCount += 1; }
+        if(entry.lss){ sums[type].lssTotal += entry.lss.amount; sums[type].lssCount += 1; }
       });
     });
 
     let html = '<div class="results">';
-    html += '<div class="avg-title">평균 (일치 건수 기준)</div>';
+    html += '<div class="avg-title">평균 (일치 건수 기준, USD)</div>';
     Object.keys(sums).forEach(type => {
-      Object.keys(sums[type]).forEach(cur => {
-        const s = sums[type][cur];
-        const avg = s.total / s.count;
-        const symbol = cur === 'USD' ? '$' : '₩';
-        html += `<div class="entry">${type}: ${symbol}${fmt(Math.round(avg))} (${cur}, ${s.count}건 평균)</div>`;
-      });
+      const s = sums[type];
+      const label = TYPE_LABELS[type] || type;
+      let line = `${label}: `;
+      const parts = [];
+      if(s.frtCount > 0) parts.push(`FRT $${fmt(Math.round(s.frtTotal / s.frtCount))} (${s.frtCount}건)`);
+      if(s.lssCount > 0) parts.push(`LSS $${fmt(Math.round(s.lssTotal / s.lssCount))} (${s.lssCount}건)`);
+      line += parts.join(' / ');
+      html += `<div class="entry">${line}</div>`;
     });
-    html += '<div class="avg-title" style="margin-top:12px;">최근 견적 (최대 5건)</div>';
-    matches.slice(0, 5).forEach(r => {
+
+    html += '<div class="avg-title" style="margin-top:12px;">최근 견적 (최대 8건)</div>';
+    matches.slice(0, 8).forEach(r => {
       const typeStr = Object.keys(r.types || {}).map(t => {
         const e = r.types[t];
-        const symbol = e.currency === 'USD' ? '$' : '₩';
-        return `${t} ${symbol}${fmt(e.amount)}`;
+        const bits = [];
+        if(e.frt) bits.push(`FRT $${fmt(e.frt.amount)}`);
+        if(e.lss) bits.push(`LSS $${fmt(e.lss.amount)}`);
+        return `${TYPE_LABELS[t] || t} ${bits.join('/')}`;
       }).join(', ');
-      html += `<div class="entry">${r.date} · ${r.item || '-'} / ${r.customer || '-'} → ${typeStr}</div>`;
+      const dateTag = r.date || '날짜미상';
+      html += `<div class="entry"><span class="date-tag">${dateTag}</span> · ${r.item || '-'} / ${r.customer || '-'} → ${typeStr}</div>`;
     });
     html += '</div>';
     resultsEl.innerHTML = html;
@@ -217,7 +239,7 @@ async function saveFrtHistory(){
   const entries = getFrtEntries();
 
   if(Object.keys(entries).length === 0){
-    statusEl.textContent = '저장할 FRT 금액을 하나 이상 입력해주세요.';
+    statusEl.textContent = '저장할 FRT 또는 LSS 금액을 하나 이상 입력해주세요.';
     return;
   }
   if(!item && !customer){
@@ -251,7 +273,7 @@ async function saveFrtHistory(){
       const decoded = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
       history = JSON.parse(decoded);
     } else if(getRes.status !== 404){
-      throw new Error('기존 기록을 불러오지 못했습니다 (상태 코드: ' + getRes.status + ')');
+      throw new Error('기존 기록을 불러오지 못했습니다 (상태 코드: ' + getRes.status + ', 파일이 1MB를 넘으면 API로 직접 못 읽어옵니다)');
     }
 
     history.push({
@@ -259,7 +281,16 @@ async function saveFrtHistory(){
       mode: currentMode,
       item: item,
       customer: customer,
+      voyage: null,
       types: entries
+    });
+
+    // 날짜순 정렬 유지 (날짜 없는 건 뒤로)
+    history.sort((a, b) => {
+      if(!a.date && !b.date) return 0;
+      if(!a.date) return 1;
+      if(!b.date) return -1;
+      return new Date(a.date) - new Date(b.date);
     });
 
     const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(history, null, 2))));
