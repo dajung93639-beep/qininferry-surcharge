@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진인해운 | FRT 견적 관리</title>
+<style>
+  :root{
+    --ink:#1f2430; --sub:#5b6270; --line:#e2e4ea; --bg:#f7f7f9; --card:#ffffff;
+    --accent:#33427a; --accent-bg:#eaedf6; --brand-red:#c14432;
+    --usd:#8a5a1e; --usd-bg:#fbf1e2; --won:#1e6b4f; --won-bg:#e9f5f0;
+  }
+  *{box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink);margin:0;padding:32px 16px;}
+  .wrap{max-width:720px;margin:0 auto;}
+  .brand-bar{height:4px;border-radius:4px;background:var(--brand-red);margin-bottom:20px;}
+  h1{font-size:19px;font-weight:700;margin:0 0 4px;}
+  .sub{color:var(--sub);font-size:13.5px;margin:0 0 20px;line-height:1.5;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:16px;}
+  .tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:2px solid var(--line);}
+  .tab-btn{flex:1;padding:10px 0;text-align:center;font-size:14px;font-weight:600;color:var(--sub);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;margin-bottom:-2px;}
+  .tab-btn.active{color:var(--accent);border-bottom-color:var(--brand-red);}
+  label{display:block;font-size:13px;color:var(--sub);margin-bottom:6px;font-weight:600;}
+  input[type=text], input[type=password]{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-size:15px;}
+  .row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
+  .field{flex:1;min-width:160px;}
+  .type-grid{display:grid;grid-template-columns:70px 1fr 1fr;gap:8px;align-items:center;margin-bottom:8px;}
+  .type-grid .type-label{font-size:13px;font-weight:600;}
+  .type-grid select, .type-grid input[type=number]{padding:8px 10px;border:1px solid var(--line);border-radius:6px;font-size:13px;}
+  .type-grid input[type=number]{text-align:right;}
+  .btn-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+  button{padding:10px 18px;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-secondary{background:#fff;color:var(--accent);border:1px solid var(--accent);}
+  button:active{opacity:.85;}
+  .status{font-size:12.5px;color:var(--sub);margin-top:10px;min-height:16px;}
+  .results{margin-top:14px;border:1px solid var(--line);border-radius:8px;padding:12px 14px;background:var(--bg);font-size:13px;}
+  .results .avg-title{font-weight:700;color:var(--accent);margin-bottom:8px;}
+  .results .entry{padding:5px 0;border-bottom:1px solid var(--line);color:var(--sub);}
+  .results .entry:last-child{border-bottom:none;}
+  details{margin-top:16px;font-size:12.5px;color:var(--sub);}
+  details input[type=password]{margin-top:8px;}
+  .check-row{display:flex;align-items:center;gap:6px;font-size:12.5px;margin-top:8px;}
+  .footer-note{font-size:12px;color:var(--sub);text-align:center;margin-top:20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand-bar"></div>
+  <h1>FRT 견적 관리</h1>
+  <p class="sub">FRT는 품목·실화주에 따라 달라져 표준 요율표로 관리하지 않습니다. 과거 견적을 조회하거나, 새 견적을 기록해두세요.</p>
+
+  <div class="tabs">
+    <button class="tab-btn active" id="tabBtnExport" onclick="switchTab('export')">수출</button>
+    <button class="tab-btn" id="tabBtnImport" onclick="switchTab('import')">수입</button>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="field"><label>품목</label><input type="text" id="frtItem" placeholder="예: 전자제품"></div>
+      <div class="field"><label>실화주</label><input type="text" id="frtCustomer" placeholder="예: OO물산"></div>
+    </div>
+
+    <label>컨테이너 타입별 FRT</label>
+    <div id="frtTypesArea"></div>
+
+    <div class="btn-row">
+      <button class="btn-secondary" onclick="lookupFrtHistory()">과거 견적 조회</button>
+      <button class="btn-primary" onclick="saveFrtHistory()">이 견적 저장</button>
+    </div>
+    <div class="status" id="frtStatus"></div>
+    <div id="frtResults"></div>
+
+    <details>
+      <summary>저장용 GitHub 토큰 입력 (조회에는 필요 없음)</summary>
+      <input type="password" id="frtToken" placeholder="github_pat_로 시작하는 토큰 붙여넣기">
+      <label class="check-row"><input type="checkbox" id="frtRememberToken"> 이 브라우저에 토큰 기억하기</label>
+    </details>
+  </div>
+
+  <p class="footer-note">진인해운 인천-진황도 항로 · FRT 견적 기록은 frt_history.json에 누적됩니다.</p>
+</div>
+
+<script>
+const OWNER = 'dajung93639-beep';
+const REPO = 'qininferry-surcharge';
+const FRT_HISTORY_URL = 'frt_history.json';
+const CONTAINER_TYPES = ['20DRY', '40HQ', '20RF', '40RF'];
+
+let currentMode = 'export';
+const frtValues = { export: {}, import: {} };
+
+function fmt(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+
+function switchTab(mode){
+  currentMode = mode;
+  document.getElementById('tabBtnExport').classList.toggle('active', mode === 'export');
+  document.getElementById('tabBtnImport').classList.toggle('active', mode === 'import');
+  document.getElementById('frtItem').value = '';
+  document.getElementById('frtCustomer').value = '';
+  document.getElementById('frtResults').innerHTML = '';
+  document.getElementById('frtStatus').textContent = '';
+  renderFrtTypeInputs();
+}
+
+function renderFrtTypeInputs(){
+  const area = document.getElementById('frtTypesArea');
+  area.innerHTML = '';
+  CONTAINER_TYPES.forEach(type => {
+    const existing = frtValues[currentMode][type] || { currency: 'USD', amount: '' };
+    const wrap = document.createElement('div');
+    wrap.className = 'type-grid';
+    wrap.innerHTML = `
+      <span class="type-label">${type}</span>
+      <select id="frt_${type}_cur" onchange="updateFrtValue('${type}')">
+        <option value="USD" ${existing.currency === 'USD' ? 'selected' : ''}>USD</option>
+        <option value="WON" ${existing.currency === 'WON' ? 'selected' : ''}>WON</option>
+      </select>
+      <input type="number" step="any" id="frt_${type}_amt" placeholder="금액" value="${existing.amount}" oninput="updateFrtValue('${type}')">
+    `;
+    area.appendChild(wrap);
+  });
+}
+
+function updateFrtValue(type){
+  const cur = document.getElementById('frt_' + type + '_cur').value;
+  const amt = document.getElementById('frt_' + type + '_amt').value;
+  frtValues[currentMode][type] = { currency: cur, amount: amt };
+}
+
+function getFrtEntries(){
+  const result = {};
+  CONTAINER_TYPES.forEach(type => {
+    const v = frtValues[currentMode][type];
+    if(v && v.amount !== '' && !isNaN(parseFloat(v.amount))){
+      result[type] = { currency: v.currency, amount: parseFloat(v.amount) };
+    }
+  });
+  return result;
+}
+
+async function lookupFrtHistory(){
+  const item = document.getElementById('frtItem').value.trim();
+  const customer = document.getElementById('frtCustomer').value.trim();
+  const statusEl = document.getElementById('frtStatus');
+  const resultsEl = document.getElementById('frtResults');
+
+  if(!item && !customer){
+    statusEl.textContent = '품목 또는 실화주를 입력해주세요.';
+    resultsEl.innerHTML = '';
+    return;
+  }
+
+  statusEl.textContent = '조회 중...';
+  resultsEl.innerHTML = '';
+
+  try{
+    const res = await fetch(FRT_HISTORY_URL, { cache: 'no-store' });
+    if(!res.ok) throw new Error('기록 파일을 불러오지 못했습니다.');
+    const history = await res.json();
+
+    const matches = history.filter(r => {
+      if(r.mode !== currentMode) return false;
+      const itemMatch = item && r.item && r.item.toLowerCase().includes(item.toLowerCase());
+      const customerMatch = customer && r.customer && r.customer.toLowerCase().includes(customer.toLowerCase());
+      return itemMatch || customerMatch;
+    }).sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    if(matches.length === 0){
+      statusEl.textContent = '일치하는 과거 견적이 없습니다.';
+      return;
+    }
+
+    statusEl.textContent = `${matches.length}건의 과거 견적을 찾았습니다.`;
+
+    const sums = {};
+    matches.forEach(r => {
+      Object.keys(r.types || {}).forEach(type => {
+        const entry = r.types[type];
+        if(!sums[type]) sums[type] = {};
+        if(!sums[type][entry.currency]) sums[type][entry.currency] = { total: 0, count: 0 };
+        sums[type][entry.currency].total += entry.amount;
+        sums[type][entry.currency].count += 1;
+      });
+    });
+
+    let html = '<div class="results">';
+    html += '<div class="avg-title">평균 (일치 건수 기준)</div>';
+    Object.keys(sums).forEach(type => {
+      Object.keys(sums[type]).forEach(cur => {
+        const s = sums[type][cur];
+        const avg = s.total / s.count;
+        const symbol = cur === 'USD' ? '$' : '₩';
+        html += `<div class="entry">${type}: ${symbol}${fmt(Math.round(avg))} (${cur}, ${s.count}건 평균)</div>`;
+      });
+    });
+    html += '<div class="avg-title" style="margin-top:12px;">최근 견적 (최대 5건)</div>';
+    matches.slice(0, 5).forEach(r => {
+      const typeStr = Object.keys(r.types || {}).map(t => {
+        const e = r.types[t];
+        const symbol = e.currency === 'USD' ? '$' : '₩';
+        return `${t} ${symbol}${fmt(e.amount)}`;
+      }).join(', ');
+      html += `<div class="entry">${r.date} · ${r.item || '-'} / ${r.customer || '-'} → ${typeStr}</div>`;
+    });
+    html += '</div>';
+    resultsEl.innerHTML = html;
+  } catch(err){
+    statusEl.textContent = '조회 중 오류가 발생했습니다: ' + err.message;
+  }
+}
+
+async function saveFrtHistory(){
+  const item = document.getElementById('frtItem').value.trim();
+  const customer = document.getElementById('frtCustomer').value.trim();
+  const statusEl = document.getElementById('frtStatus');
+  const entries = getFrtEntries();
+
+  if(Object.keys(entries).length === 0){
+    statusEl.textContent = '저장할 FRT 금액을 하나 이상 입력해주세요.';
+    return;
+  }
+  if(!item && !customer){
+    statusEl.textContent = '품목 또는 실화주를 입력해주세요.';
+    return;
+  }
+
+  const token = document.getElementById('frtToken').value.trim();
+  if(!token){
+    statusEl.textContent = 'GitHub 토큰을 입력해주세요 (하단 펼치기).';
+    return;
+  }
+
+  if(document.getElementById('frtRememberToken').checked){
+    localStorage.setItem('qi_frt_token', token);
+  }
+
+  statusEl.textContent = '저장 중...';
+
+  try{
+    const getRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${FRT_HISTORY_URL}`, {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' },
+      cache: 'no-store'
+    });
+
+    let history = [];
+    let sha = null;
+    if(getRes.ok){
+      const json = await getRes.json();
+      sha = json.sha;
+      const decoded = decodeURIComponent(escape(atob(json.content.replace(/\n/g, ''))));
+      history = JSON.parse(decoded);
+    } else if(getRes.status !== 404){
+      throw new Error('기존 기록을 불러오지 못했습니다 (상태 코드: ' + getRes.status + ')');
+    }
+
+    history.push({
+      date: new Date().toISOString().slice(0, 10),
+      mode: currentMode,
+      item: item,
+      customer: customer,
+      types: entries
+    });
+
+    const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(history, null, 2))));
+    const putBody = {
+      message: `FRT 견적 저장 (${item || customer}, ${currentMode})`,
+      content: newContent,
+      branch: 'main'
+    };
+    if(sha) putBody.sha = sha;
+
+    const putRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${FRT_HISTORY_URL}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(putBody)
+    });
+
+    if(!putRes.ok){
+      throw new Error('저장에 실패했습니다 (상태 코드: ' + putRes.status + ')');
+    }
+
+    statusEl.textContent = '저장되었습니다.';
+  } catch(err){
+    statusEl.textContent = '오류: ' + err.message;
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedToken = localStorage.getItem('qi_frt_token');
+  if(savedToken){
+    document.getElementById('frtToken').value = savedToken;
+    document.getElementById('frtRememberToken').checked = true;
+  }
+  renderFrtTypeInputs();
+});
+</script>
+</body>
+</html>
