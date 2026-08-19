@@ -163,6 +163,14 @@
   }
   .mail-btn:active{opacity:.85;}
   .mail-status{font-size:12.5px;color:var(--sub);margin-top:6px;height:16px;}
+  .frt-mini-card{background:var(--accent-bg);border-radius:10px;padding:14px 16px;margin-bottom:16px;}
+  .frt-mini-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+  .frt-ref-link{font-size:12.5px;color:var(--accent);font-weight:600;text-decoration:none;}
+  .frt-ref-link:hover{text-decoration:underline;}
+  .frt-type-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+  .frt-type-row .type-label{font-size:13px;font-weight:600;width:56px;flex-shrink:0;}
+  .frt-type-row select, .frt-type-row input[type=number]{padding:6px 8px;border:1px solid var(--line);border-radius:6px;font-size:13px;background:#fff;}
+  .frt-type-row input[type=number]{width:100px;text-align:right;}
 </style>
 </head>
 <body>
@@ -199,6 +207,14 @@
 
       <div class="note" id="noteExport">수출 항목: BAF(USD), THC/DOC/WFG/PSF/PFS/SLC(WON)</div>
 
+      <div class="frt-mini-card">
+        <div class="frt-mini-header">
+          <label class="grouplabel" style="margin:0;">FRT (선택 입력)</label>
+          <a href="frt.html" target="_blank" rel="noopener noreferrer" class="frt-ref-link">FRT 참고하기 ↗</a>
+        </div>
+        <div id="frtTypesAreaExport"></div>
+      </div>
+
       <button class="copy-btn" onclick="copyResult('export')" id="copyBtnExport">화주 회신용 문구로 복사</button>
       <div class="copy-status" id="exportCopyStatus"></div>
 
@@ -221,6 +237,14 @@
       <div class="empty-hint" id="importEmptyHint" style="display:none;"></div>
 
       <div class="note" id="noteImport">수입 항목: BAF/CAF/CRS(USD), THC/DOC/WFG/CCF/PSF/PFS(WON)</div>
+
+      <div class="frt-mini-card">
+        <div class="frt-mini-header">
+          <label class="grouplabel" style="margin:0;">FRT (선택 입력)</label>
+          <a href="frt.html" target="_blank" rel="noopener noreferrer" class="frt-ref-link">FRT 참고하기 ↗</a>
+        </div>
+        <div id="frtTypesAreaImport"></div>
+      </div>
 
       <button class="copy-btn" onclick="copyResult('import')" id="copyBtnImport">화주 회신용 문구로 복사</button>
       <div class="copy-status" id="importCopyStatus"></div>
@@ -372,6 +396,56 @@ function toggleType(mode, type, isChecked){
   if(!isChecked && idx !== -1){ list.splice(idx, 1); }
   buildCheckGroup(mode);
   calculate(mode);
+  renderFrtMiniInputs(mode);
+}
+
+// ---- FRT 간이 입력 (메일 포함용, 조회/저장은 frt.html에서) ----
+const frtValues = { export: {}, import: {} };
+
+function renderFrtMiniInputs(mode){
+  const area = document.getElementById('frtTypesArea' + (mode === 'export' ? 'Export' : 'Import'));
+  if(!area) return;
+  const types = CONTAINER_TYPES.filter(t => selectedTypes[mode].includes(t));
+
+  if(types.length === 0){
+    area.innerHTML = '';
+    return;
+  }
+
+  area.innerHTML = '';
+  types.forEach(type => {
+    const existing = frtValues[mode][type] || { currency: 'USD', amount: '' };
+    const rowId = 'frtmini_' + mode + '_' + type;
+    const wrap = document.createElement('div');
+    wrap.className = 'frt-type-row';
+    wrap.innerHTML = `
+      <span class="type-label">${type}</span>
+      <select id="${rowId}_cur" onchange="updateFrtMiniValue('${mode}','${type}')">
+        <option value="USD" ${existing.currency === 'USD' ? 'selected' : ''}>USD</option>
+        <option value="WON" ${existing.currency === 'WON' ? 'selected' : ''}>WON</option>
+      </select>
+      <input type="number" step="any" id="${rowId}_amt" placeholder="금액 (선택)" value="${existing.amount}" oninput="updateFrtMiniValue('${mode}','${type}')">
+    `;
+    area.appendChild(wrap);
+  });
+}
+
+function updateFrtMiniValue(mode, type){
+  const cur = document.getElementById('frtmini_' + mode + '_' + type + '_cur').value;
+  const amt = document.getElementById('frtmini_' + mode + '_' + type + '_amt').value;
+  frtValues[mode][type] = { currency: cur, amount: amt };
+}
+
+function getFrtEntries(mode){
+  const types = CONTAINER_TYPES.filter(t => selectedTypes[mode].includes(t));
+  const result = {};
+  types.forEach(type => {
+    const v = frtValues[mode][type];
+    if(v && v.amount !== '' && !isNaN(parseFloat(v.amount))){
+      result[type] = { currency: v.currency, amount: parseFloat(v.amount) };
+    }
+  });
+  return result;
 }
 
 function switchTab(tab){
@@ -435,11 +509,14 @@ function buildHtmlBody(mode){
   const types = CONTAINER_TYPES.filter(t => selectedTypes[mode].includes(t));
   const label = mode === 'export' ? s.labelExport : s.labelImport;
   const route = mode === 'export' ? s.routeExport : s.routeImport;
+  const frtEntries = getFrtEntries(mode);
+  const hasFrt = Object.keys(frtEntries).length > 0;
 
   const ACCENT = '#33427a';
   const BRAND_RED = '#c14432';
   const BORDER = '#000000';
   const STRIPE = '#f7f7f9';
+  const FRT_BG = '#fbf1e2';
   const FONT = "'맑은 고딕','Malgun Gothic',Arial,sans-serif";
 
   let html = '';
@@ -467,9 +544,25 @@ function buildHtmlBody(mode){
     });
     html += `</tr>`;
   });
+
+  if(hasFrt){
+    html += `<tr style="background:${FRT_BG};">
+      <td style="padding:0px 8px;border:1px solid ${BORDER};font-weight:bold;">FRT</td>`;
+    types.forEach(type => {
+      if(frtEntries[type]){
+        const symbol = frtEntries[type].currency === 'USD' ? '$' : '₩';
+        html += `<td style="padding:0px 8px;border:1px solid ${BORDER};text-align:right;font-weight:bold;">${symbol}${fmt(frtEntries[type].amount)}</td>`;
+      } else {
+        html += `<td style="padding:0px 8px;border:1px solid ${BORDER};text-align:right;">-</td>`;
+      }
+    });
+    html += `</tr>`;
+  }
+
   html += `</table>`;
 
-  html += `<p style="margin:0 0 4px;color:#5b6270;">${s.frtNote}</p>`;
+  const noteText = hasFrt ? s.frtNoteNoFrt : s.frtNote;
+  html += `<p style="margin:0 0 4px;color:#5b6270;">${noteText}</p>`;
   html += `<p style="margin:14px 0 0;">${s.thanks}<br>${s.signature}</p>`;
   html += `</div>`;
   return html;
@@ -481,6 +574,8 @@ function buildBody(mode){
   const types = CONTAINER_TYPES.filter(t => selectedTypes[mode].includes(t));
   const label = mode === 'export' ? s.labelExport : s.labelImport;
   const route = mode === 'export' ? s.routeExport : s.routeImport;
+  const frtEntries = getFrtEntries(mode);
+  const hasFrt = Object.keys(frtEntries).length > 0;
 
   let lines = [];
   lines.push(s.greeting);
@@ -504,9 +599,22 @@ function buildBody(mode){
     lines.push(row);
   });
 
+  if(hasFrt){
+    let frtRow = 'FRT'.padEnd(6);
+    types.forEach(type => {
+      if(frtEntries[type]){
+        const symbol = frtEntries[type].currency === 'USD' ? '$' : '₩';
+        frtRow += `${symbol}${fmt(frtEntries[type].amount)}`.padEnd(12);
+      } else {
+        frtRow += '-'.padEnd(12);
+      }
+    });
+    lines.push(frtRow);
+  }
+
   lines.push('');
 
-  lines.push(s.frtNote);
+  lines.push(hasFrt ? s.frtNoteNoFrt : s.frtNote);
   lines.push('');
   lines.push(s.thanks);
   lines.push(s.signature);
@@ -616,6 +724,8 @@ function setLanguage(lang){
   buildCheckGroup('import');
   calculate('export');
   calculate('import');
+  renderFrtMiniInputs('export');
+  renderFrtMiniInputs('import');
   renderLastUpdated();
 }
 
@@ -623,6 +733,8 @@ buildCheckGroup('export');
 buildCheckGroup('import');
 calculate('export');
 calculate('import');
+renderFrtMiniInputs('export');
+renderFrtMiniInputs('import');
 
 // ---- 서버 내부 rates.json 실시간 요율 연동 ----
 const RATES_JSON_URL = 'rates.json';
