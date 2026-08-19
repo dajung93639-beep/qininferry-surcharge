@@ -3785,6 +3785,690 @@
     }
   },
   {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "티지인터내셔널 (TG INTERNATIONAL)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "티지인터내셔널 (TG INTERNATIONAL)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 540.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 비앤지인터내셔날",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "허드3 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 300.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "모닝팜",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 325.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 10.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 250.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 400.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-03",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 400.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
     "date": "2026-08-07",
     "mode": "import",
     "item": "",
@@ -4787,6 +5471,690 @@
         "lss": {
           "currency": "USD",
           "amount": 370.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "티지로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "티지로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "티지로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 비앤지인터내셔날",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "지에프에스글로벌로지스틱스",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 비에이치물류",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 하나에프앤드엘",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 250.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "그린라인로지스틱스 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "그린라인로지스틱스 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 아주해운항공",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 225.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-07",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
         }
       }
     }
@@ -6768,6 +8136,614 @@
     }
   },
   {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "empty",
+    "voyage": null,
+    "types": {
+      "ALL": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "그린라인로지스틱스 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "모닝팜",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "티지인터내셔널 (TG INTERNATIONAL)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "티지인터내셔널 (TG INTERNATIONAL)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)태웅로직스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 540.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "제일통상",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 비에이치물류",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 225.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "보고인터내셔날",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-11",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
     "date": "2026-08-13",
     "mode": "import",
     "item": "",
@@ -7865,6 +9841,1108 @@
         "lss": {
           "currency": "USD",
           "amount": 370.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "empty",
+    "voyage": null,
+    "types": {
+      "ALL": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "에버에이스쉬핑 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 비앤지인터내셔날",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "제이신원 주식회사",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 하나에프앤드엘",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "원창무역",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 아이펙스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "로얄무역 주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 250.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "모닝팜",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "모닝팜",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "지에프에스글로벌로지스틱스",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 60.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 100.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "성진통상(주)",
+    "voyage": null,
+    "types": {
+      "20HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 아주해운항공",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 하루운송무역서비스",
+    "voyage": null,
+    "types": {
+      "40RF": {
+        "frt": {
+          "currency": "USD",
+          "amount": 800.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 300.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 325.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 531.43
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-14",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)원남지엘에스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
         }
       }
     }
@@ -9404,6 +12482,348 @@
         "lss": {
           "currency": "USD",
           "amount": 280.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "empty",
+    "voyage": null,
+    "types": {
+      "ALL": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 220.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 250.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "반얀로지스틱스(주)",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "에스알티트랜스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 225.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 100.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "(주)일심로지스타",
+    "voyage": null,
+    "types": {
+      "20DRY": {
+        "frt": {
+          "currency": "USD",
+          "amount": 0.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 0.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 200.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "주식회사 앤트로지스틱스",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 20.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 140.0
+        }
+      }
+    }
+  },
+  {
+    "date": "2026-08-17",
+    "mode": "export",
+    "item": "",
+    "customer": "글로비스주식회사",
+    "voyage": null,
+    "types": {
+      "40HQ": {
+        "frt": {
+          "currency": "USD",
+          "amount": 540.0
+        },
+        "lss": {
+          "currency": "USD",
+          "amount": 200.0
         }
       }
     }
